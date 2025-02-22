@@ -158,6 +158,7 @@ a {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-position: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -193,12 +194,13 @@ a {
   border-radius: 4px;
   min-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* END-HERO */
@@ -275,14 +277,11 @@ a {
 }
 
 .team-list-container {
-  padding: 32px 0 8px;
+  padding: 32px 0;
   align-items: center;
   flex-direction: column;
 }
 
-.team-box-icons {
-  margin-bottom: 32px;
-}
 .team-icons-list {
   display: flex;
   gap: 24px;
@@ -302,6 +301,7 @@ a {
   justify-content: center;
   height: 100%;
   width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon {
@@ -324,6 +324,7 @@ a {
 }
 .team-list-text {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 /* END-TEAM */
@@ -352,6 +353,7 @@ a {
 }
 .portfolio-overlay {
   position: relative;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
@@ -360,16 +362,14 @@ a {
   background-color: #4d5ae5;
   color: #f4f4fd;
   width: 100%;
-  padding: 40px 32px 164px;
-  overflow: hidden;
-  opacity: 0;
+  height: 100%;
+  padding: 40px 32px;
+
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .overlay {
-  opacity: 1;
   transform: translateY(0);
 }
 
@@ -410,10 +410,11 @@ footer {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box-logo {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 .footer-logo {
   font-weight: 700;
@@ -434,6 +435,7 @@ footer {
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
+  font-weight: 500;
 }
 
 .footer-social {
@@ -444,7 +446,7 @@ footer {
 }
 .footer-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
   justify-content: center;
 }
@@ -465,6 +467,7 @@ footer {
   justify-content: center;
   height: 100%;
   width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons-links:hover,
