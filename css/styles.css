@@ -435,7 +435,6 @@ footer {
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
-  font-weight: 500;
 }
 
 .footer-social {
@@ -443,6 +442,7 @@ footer {
 .footer-social-text {
   color: #fff;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 .footer-list {
   display: flex;
